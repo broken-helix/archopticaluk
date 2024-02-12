@@ -1,0 +1,93 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Default Page Settings */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    flex-direction: column;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.Site-content {
+    flex: 1;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Header */
+.page-header, .page-footer {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.site-title {
+    text-align: center;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    justify-content: right;
+}
+
+#navlinks {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+}
+#navlinks a:hover {
+    color: grey;
+}
+
+#navlinks a.active {
+    color: red;
+}
+
+/* Content */
+.page-content {
+    flex-grow: 1;
+}
+
+/* Footer */
+.social-icons, .copyright {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-content: space-between;
+}
+
+/* Social Links */
+.fa-brands, .fab {
+    margin: 10px;
+    font-size: 20px;
+}
