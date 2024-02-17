@@ -18,7 +18,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     box-sizing: border-box;
-    max-width: 70%;
+    max-width: 90%;
     margin: 0 auto;
     display: flex;
     min-height: 100vh;
@@ -76,6 +76,22 @@ nav {
 /* Content */
 .page-content {
     flex-grow: 1;
+}
+
+.portfolio-slideshow {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-navigation {
+    display: flex;
+    color: red;
+}
+
+.gallery-navigation-img {
+    display: flex;
+    width: 33%;
+    justify-content: center;
 }
 
 /* Footer */
