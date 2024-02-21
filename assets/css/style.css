@@ -81,17 +81,45 @@ nav {
 .portfolio-slideshow {
     display: flex;
     justify-content: center;
+    background-color: yellow;
+    aspect-ratio: 2 / 1;
+    width: 100%;
+}
+
+.slideshow {
+
+    background-color: aquamarine;
+    width: 90%;
 }
 
 .gallery-navigation {
     display: flex;
-    color: red;
+    color: yellow;
+    width: 100%;
+    background-color: yellow;
 }
 
 .gallery-navigation-img {
     display: flex;
     width: 33%;
     justify-content: center;
+    margin: 0 3%;
+    aspect-ratio: 1;
+    background-color: blue;
+    border: 2px solid white;
+    padding: 10px;    
+}
+
+#gal-nav-1 {
+    border-radius: 75% 25% 33% 67% / 38% 27% 73% 62% ;
+}
+
+#gal-nav-2 {
+    border-radius: 75% 25% 33% 67% / 38% 27% 73% 62% ;
+}
+
+#gal-nav-3 {
+    border-radius: 75% 25% 33% 67% / 38% 27% 73% 62% ;
 }
 
 /* Footer */
