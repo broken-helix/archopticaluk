@@ -96,22 +96,41 @@ nav {
     display: flex;
     color: yellow;
     width: 100%;
-    background-color: yellow;
 }
 
 .gallery-navigation-img {
     display: flex;
-    width: 33%;
     justify-content: center;
     align-items: center;
-    padding: 10px;    
+    padding: 10px;
 }
 
-#test-image, #test-image-2, #test-image-3 {
-    display: flex;
+#test-image {
     width: 100%;
-    height: 100%;
-    border-radius: 75% 25% 33% 67% / 38% 27% 73% 62% ;
+    border-radius: 73% 27% 22% 78% / 66% 80% 20% 34%;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border: solid 2px black;
+}
+
+#test-image-2 {
+    width: 100%;
+    border-radius: 27% 73% 37% 63% / 18% 26% 74% 82%;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border: solid 2px black;
+}
+
+#test-image-3 {
+    width: 100%;
+    border-radius: 73% 27% 22% 78% / 66% 80% 20% 34%;
+    object-fit: cover;
+    aspect-ratio: 1;
+    border: solid 2px black;
+}
+
+#href-border {
+    border-radius: 73% 27% 22% 78% / 66% 80% 20% 34%;
 }
 
 /*#gal-nav-1 {
