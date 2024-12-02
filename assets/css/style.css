@@ -55,8 +55,6 @@ a {
 nav {
     display: flex;
     justify-content: right;
-    width: 90%;
-    margin: auto;
 }
 
 #navlinks {
@@ -84,25 +82,44 @@ nav {
     position: relative;
     margin: auto;
     flex-direction: column;
-}
-
-.slideshow {
-    background-color: aquamarine;
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    overflow: hidden;
-    margin: auto;
     aspect-ratio: 2 / 1;
 }
 
-.slideshow-img {
-    overflow: hidden;
+.slideshow-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f0f0f0; /* Placeholder background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensure it's above the slideshow */
 }
 
+/* Optional: Add loading spinner or text */
+.slideshow-placeholder::after {
+    content: "Loading...";
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.slideshow {
+    display: flex;
+    background-color: aquamarine;
+    overflow: hidden;
+    margin: auto;
+    aspect-ratio: 2 / 1;
+    align-items: flex-end;
+}
+
+/*.slideshow-tile {
+
+}*/
+
 /* Hide the images by default */
-    .mySlides {
+.mySlides {
     display: none;
 }
   
@@ -138,9 +155,13 @@ nav {
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
-    width: 90%;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; /* Remove full width */
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background */
+    border-radius: 5px; /* Optional: Rounds the caption's background */
 }
   
 /* Number text (1/3 etc) */
@@ -184,6 +205,25 @@ nav {
     to {opacity: 1}
 }
 
+.site-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.site-links-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.site-link {
+    display: flex;
+    flex-direction: row;
+}
+
+.site-link img {
+    width: 100%;
+}
+/*
 .gallery-navigation {
     display: flex;
     color: yellow;
@@ -191,11 +231,13 @@ nav {
 }
 
 .gallery-navigation-img {
+    width: 33.3%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
+/*
 
 #test-image {
     width: 100%;
@@ -221,20 +263,24 @@ nav {
     border: solid 2px black;
 }
 
-#href-border {
+.gallery-navigation-img {
+    border-radius: 50%;
+}
+
+/*#href-border {
     border-radius: 73% 27% 22% 78% / 66% 80% 20% 34%;
 }
 
 /*#gal-nav-1 {
 }*/
 
-#gal-nav-2 {
+/*#gal-nav-2 {
     border-radius: 75% 25% 33% 67% / 38% 27% 73% 62% ;
 }
 
 #gal-nav-3 {
     border-radius: 75% 25% 33% 67% / 38% 27% 73% 62% ;
-}
+}*/
 
 /* Footer */
 .social-icons, .copyright {
